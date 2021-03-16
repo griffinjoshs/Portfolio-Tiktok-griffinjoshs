@@ -2,13 +2,31 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const PORT = 8000;
+const mongoose = require('mongoose')
+require("dotenv").config({path: './config.env'})
 
-app.use(cors());
 
 var corsOptions = {
     origin: 'http://localhost:3000',
 };
 
-app.use(cors(corsOptions));
+// require('./server/config/mongoose.config')
 
-app.listen(port, () => console.log(`http://localhost:${PORT}`))
+app.use(cors(corsOptions));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }))
+
+require('./server/routes/subscriber.routes')(app)
+require('./server/routes/nodeMailerRoutes')(app)
+
+const connectionString = process.env.DB_CONNECTION.replace('<password>', process.env.DB_PASSWORD).replace('<dbname>', process.env.DB_NAME)
+mongoose
+// .connect('mongodb://localhost/grifftokdb'
+.connect(connectionString || 'mongodb://localhost/grifftokdb', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,    
+})
+.then(() => console.log('Connected To Database!!'))
+.catch(err => console.log('error:' + err))
+
+app.listen(PORT, () => console.log(`http://localhost:${PORT}/api`))

@@ -6,8 +6,8 @@ import './Cards.css'
 const Card = (props) => {
     const { Icon, Link, Header, Paragraph, ButtonText } = props
   return (
-    <div>
-      <div className="card" onClick="https://www.patreon.com/griffinjoshs">
+    <div className='cardContainer'>
+      <div className="cardBox">
         <br></br>
         <i className="boxIcon">{Icon}</i>
         <br></br>

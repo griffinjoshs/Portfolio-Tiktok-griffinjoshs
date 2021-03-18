@@ -8,7 +8,7 @@ import Button from '../Button/Button'
 // By importing the Header.css file, it is added to the DOM whenever this component loads
 const styles = {
   topSpace: {
-    "padding-top": "50px"
+    paddingTop: "50px"
   }
 }
 

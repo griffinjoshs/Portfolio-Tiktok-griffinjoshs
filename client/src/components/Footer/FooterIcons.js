@@ -6,7 +6,7 @@ import "./styles/FooterIcons.css";
 
 function FooterIcons() {
     return ( 
-<Col md="6" lg="7" className="text-center text-md-center">
+<div>
 <a href="https://www.tiktok.com/@griffinjoshs" id="footSocialIcon">
   <SiTiktok/>
 </a>
@@ -22,6 +22,6 @@ function FooterIcons() {
 <a href="https://www.facebook.com/griffinjoshs" id="footSocialIcon">
   <SiFacebook/>
 </a>
-</Col>
+</div>
 )}
 export default FooterIcons;

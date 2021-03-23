@@ -1,7 +1,8 @@
 import React, {useState} from "react";
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Col } from 'react-bootstrap';
 import "./styles/Navbar.css";
-import logo from '../../images/griffinjoshs-belinSans.png';
+import logo from '../../images/griffinjoshs-logo.png';
+import text from '../../images/griffinjoshs-belinSans.png';
 import SocialMediaNav from "./socialMediaNav";
 
 function NavBar() {
@@ -24,8 +25,13 @@ function NavBar() {
     <nav className={navbar ? 'Navbar active fixed-top' : 'Navbar fixed-top'}>
       <Navbar collapseOnSelect expand="lg" fixed bg="" variant="dark">
         {/* <Navbar.Brand href="#homeIMG"></Navbar.Brand> */}
-        <Navbar.Brand href="/">
-          <img src={logo} id="logo" alt="Logo" width="200" height="45"></img>
+        <Navbar.Brand href="/" className='brand'>
+          <Col xs={6}>
+          <img src={logo} id="logo" alt="Logo" width="55" height="50"></img>
+          </Col>
+          <Col xs={6}>
+          <img src={text} alt="text" id='text' width="200" height="50"></img>
+          </Col>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

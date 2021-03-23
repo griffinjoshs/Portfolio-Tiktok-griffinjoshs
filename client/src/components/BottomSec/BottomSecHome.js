@@ -17,7 +17,7 @@ function BottomSecHome() {
                 <Col sm={12} lg={5} id="secVidCol">
                     <br></br>
                     <div className='space' id='vidSpacer'></div>
-                <iframe width="560" height="315" id='video' src="https://www.youtube.com/embed/8VcVeW9hAZ8" title='youtubeVideo' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" id='video' src="https://www.youtube.com/embed/8VcVeW9hAZ8" title='youtubeVideo' frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </Col>
                 <Col lg={1}></Col>
                 <Col sm={12} lg={5} id="jumbtronColumn">

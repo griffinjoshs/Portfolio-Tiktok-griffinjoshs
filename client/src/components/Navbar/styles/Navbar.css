@@ -3,6 +3,14 @@
   box-sizing: border-box;
 }
 
+.brand {
+  display: flex;
+}
+
+#text {
+  margin-left: -65px;
+}
+
 /* Logo */
 #logo:hover {
   padding: 8px 16px;
@@ -122,6 +130,5 @@ a.dropdown-item:hover {
 background-color: #57b9f1!important;
 color: black!important;
 }
-
 
 

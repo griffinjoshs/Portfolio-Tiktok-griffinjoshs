@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const mongoose = require('mongoose')
 require("dotenv").config({path: './config.env'})
 
@@ -15,6 +15,10 @@ var corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+  }
 
 require('./server/routes/subscriber.routes')(app)
 require('./server/routes/nodeMailerRoutes')(app)

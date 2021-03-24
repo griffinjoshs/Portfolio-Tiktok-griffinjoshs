@@ -7,7 +7,7 @@ import about from "./pages/About";
 import axios from "axios";
 import "./App.css";
 import LinkPage from "./pages/LinkPage";
-import Admin from "./pages/Admin";
+// import Admin from "./pages/Admin";
 
 function App() {
   const [msg, setMsg] = useState(console.log("loading..."));
@@ -28,7 +28,7 @@ function App() {
           <Route exact path="/contact" component={contact} />
           <Route exact path="/about" component={about} />
           <Route exact path="/links" component={LinkPage} />
-          <Route exact path="/admin" component={Admin} />
+          {/* <Route exact path="/admin" component={Admin} /> */}
         </Switch>
       </Router>
     </div>

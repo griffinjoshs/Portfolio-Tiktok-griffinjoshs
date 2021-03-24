@@ -28,12 +28,10 @@ function BottomSecHome() {
                         For those who really support me, if you would like to get the best from me possible, join my Patreon Community. You will get free Merchandise as well as access to unposted and removed videos!
                         </p>
                         <br></br>
-                        <p>
                         <a href='#subscribeBtn'>
                         <Button>
                             Learn More <FaPatreon/></Button>
                         </a>
-                        </p>
                     </Jumbotron>
                 </Col>
             </Row>

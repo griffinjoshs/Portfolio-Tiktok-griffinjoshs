@@ -19,9 +19,9 @@ function FooterIcons() {
 <a href="https://twitter.com/griffinjoshs" id="footSocialIcon">
   <SiTwitter/>
 </a>
-<a href="https://www.facebook.com/griffinjoshs" id="footSocialIcon">
+{/* <a href="https://www.facebook.com/griffinjoshs" id="footSocialIcon">
   <SiFacebook/>
-</a>
+</a> */}
 </div>
 )}
 export default FooterIcons;

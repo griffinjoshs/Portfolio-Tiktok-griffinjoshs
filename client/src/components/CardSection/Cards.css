@@ -19,6 +19,7 @@
   box-shadow: 0 0 5px 5px #888;
   color: white;
   text-decoration: none;
+  z-index: 10;
 }
 
 .cardBox:hover {

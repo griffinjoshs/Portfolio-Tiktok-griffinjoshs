@@ -10,13 +10,7 @@ import CardContent from './CardContent'
 
 function CardSection() {
   return ( 
-        <section>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <Container>
+            <Container className='space'>
                 <Row>
                 {CardContent.map((card, i) => (
                     <Col md={12} lg={4} key={card.id}>
@@ -31,11 +25,6 @@ function CardSection() {
                 ))}
                 </Row>
             </Container>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-        </section>
   );
 }
 

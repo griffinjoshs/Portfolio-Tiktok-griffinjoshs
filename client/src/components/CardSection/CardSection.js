@@ -10,7 +10,7 @@ import CardContent from './CardContent'
 
 function CardSection() {
   return ( 
-        <section className="boxSection">
+        <section>
             <br></br>
             <br></br>
             <br></br>

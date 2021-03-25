@@ -8,7 +8,7 @@ import CardData from './CardContent'
 
 // By importing the Header.css file, it is added to the DOM whenever this component loads
 
-function BoxSection() {
+function CardSection() {
     const [cardContent, setCardContent] = useState(CardData);
   useEffect(() => {
   setCardContent(CardData)
@@ -44,4 +44,4 @@ function BoxSection() {
   );
 }
 
-export default BoxSection;
+export default CardSection;

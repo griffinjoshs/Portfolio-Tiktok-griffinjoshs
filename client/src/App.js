@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api")
+      .get("/api")
       .then((res) => {
         console.log(res.data.message);
         setMsg(res.data.message);

@@ -34,7 +34,7 @@ function ContactForm() {
     event.preventDefault();
     console.log("data object");
     axios
-      .post("http://localhost:8000/api/subscribers", data)
+      .post("/api/subscribers", data)
       .then((res) => {
         console.log(res.data.results);
       })
@@ -42,7 +42,7 @@ function ContactForm() {
         console.log(err);
       });
     axios
-      .post("http://localhost:8000/api/send", data)
+      .post("/api/send", data)
       .then((res) => {
         console.log(res.data.results);
       })

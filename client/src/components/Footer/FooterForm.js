@@ -32,7 +32,7 @@ const submitHandler = (event) => {
     event.preventDefault();
     console.log(data);
     axios
-      .post("http://localhost:8000/api/subscribers", data)
+      .post("/api/subscribers", data)
       .then((res) => {
         console.log(res.data.results);
       })

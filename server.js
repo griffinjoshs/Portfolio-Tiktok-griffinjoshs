@@ -5,13 +5,13 @@ const PORT = process.env.PORT || 8000;
 const mongoose = require("mongoose");
 require("dotenv").config({ path: "./config.env" });
 
-var corsOptions = {
-  origin: "http://localhost:3000",
-};
+// var corsOptions = {
+//   origin: "http://localhost:3000",
+// };
 
 // require('./server/config/mongoose.config')
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

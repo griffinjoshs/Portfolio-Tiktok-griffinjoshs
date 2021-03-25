@@ -4,14 +4,14 @@ import "../Header/Header.css";
 import "./CardSection.css";
 import Cards from './Cards'
 // import { SiTiktok } from "react-icons/si";
-import CardData from './CardContent'
+import CardContent from './CardContent'
 
 // By importing the Header.css file, it is added to the DOM whenever this component loads
 
 function CardSection() {
-    const [cardContent, setCardContent] = useState(CardData);
+    const [cardContent, setCardContent] = useState(CardContent);
   useEffect(() => {
-  setCardContent(CardData)
+  setCardContent(CardContent)
 },[])
 
   return ( 

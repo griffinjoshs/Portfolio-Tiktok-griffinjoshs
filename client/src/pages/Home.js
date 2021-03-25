@@ -5,7 +5,6 @@ import SubscribeBar from "../components/SubscribeBar/SubscribeBar";
 import ParallaxSection from "../components/ParallaxSection/ParallaxSection";
 import Footer from "../components/Footer/Footer";
 import CardSection from "../components/CardSection/CardSection";
-import CardContent from '../components/CardSection/CardContent'
 import BottomSecHome from "../components/BottomSec/BottomSecHome";
 import ParallaxContent from '../components/ParallaxSection/ParallaxContent'
 import 'bootstrap/dist/css/bootstrap.min.css';

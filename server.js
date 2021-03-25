@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 8000;
 const mongoose = require("mongoose");
-require("dotenv").config({ path: "./config.env" });
+// require("dotenv").config({ path: "./config.env" });
 
 // var corsOptions = {
 //   origin: "http://localhost:3000",

@@ -9,11 +9,6 @@ import CardContent from './CardContent'
 // By importing the Header.css file, it is added to the DOM whenever this component loads
 
 function CardSection() {
-    const [cardContent, setCardContent] = useState(CardContent);
-  useEffect(() => {
-  setCardContent(CardContent)
-},[])
-
   return ( 
         <section className="boxSection">
             <br></br>
@@ -23,7 +18,7 @@ function CardSection() {
             <br></br>
             <Container>
                 <Row>
-                {cardContent.map((card, i) => (
+                {CardContent.map((card, i) => (
                     <Col md={12} lg={4} key={card.id}>
                         <Cards
                         Icon = {card.Icon}

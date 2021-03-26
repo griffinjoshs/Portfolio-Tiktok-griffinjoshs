@@ -6,6 +6,7 @@ import './Cards.css'
 const Card = (props) => {
     const { Icon, Link, Header, Paragraph, ButtonText } = props
   return (
+    <div className='cardContainer'>
       <div className="cardBox">
         <br></br>
         <i className="boxIcon">{Icon}</i>
@@ -21,6 +22,7 @@ const Card = (props) => {
         </a>
         <br></br>
       </div>
+    </div>
   );
 };
 

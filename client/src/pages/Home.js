@@ -4,11 +4,11 @@ import SubscribeBar from "../components/SubscribeBar/SubscribeBar";
 // import InfoSection from "../components/infoSection";
 import ParallaxSection from "../components/ParallaxSection/ParallaxSection";
 import Footer from "../components/Footer/Footer";
-import CardSection from "../components/CardSection/CardSection";
 import BottomSecHome from "../components/BottomSec/BottomSecHome";
 import ParallaxContent from '../components/ParallaxSection/ParallaxContent'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from '../components/Navbar/Navbar';
+import CardSection from "../components/CardSection/CardSection";
 
 function home() {
   return (

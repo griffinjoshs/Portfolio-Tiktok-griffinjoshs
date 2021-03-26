@@ -5,7 +5,6 @@ import AboutLower from "../components/AboutLower/AboutLower";
 import Footer from "../components/Footer/Footer";
 import ParallaxSection from '../components/ParallaxSection/ParallaxSection';
 import ParallaxContent from '../components/ParallaxSection/ParallaxContent'
-import CardSection from '../components/CardSection/CardSection'
 import Navbar from '../components/Navbar/Navbar';
 
 function About() {
@@ -13,7 +12,6 @@ function About() {
       <div>
       <Navbar/>
       <AboutHeader />
-      <CardSection/>
       <AboutLower/>
       <ParallaxSection
     Header = {ParallaxContent[1].Header}

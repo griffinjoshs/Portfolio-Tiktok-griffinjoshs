@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Container, Col, Row } from 'react-bootstrap';
 import "../Header/Header.css";
 import "./CardSection.css";
@@ -10,7 +10,13 @@ import CardContent from './CardContent'
 
 function CardSection() {
   return ( 
-            <Container className='space'>
+        <section>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Container>
                 <Row>
                 {CardContent.map((card, i) => (
                     <Col md={12} lg={4} key={card.id}>
@@ -25,6 +31,11 @@ function CardSection() {
                 ))}
                 </Row>
             </Container>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+        </section>
   );
 }
 

@@ -11,6 +11,7 @@ const Card = (props) => {
         <br></br>
         <i className="boxIcon">{Icon}</i>
         <br></br>
+        <br></br>
         <h3 className="boxHeader">{Header}</h3>
         <br></br>
         <p>{Paragraph}</p>

@@ -26,10 +26,11 @@ function NavBar() {
       <Navbar collapseOnSelect expand="lg" fixed bg="" variant="dark">
         {/* <Navbar.Brand href="#homeIMG"></Navbar.Brand> */}
         <Navbar.Brand href="/" className='brand'>
-          <Col xs={6}>
+          <Col xs={5}>
           <img src={logo} id="logo" alt="Logo" width="55" height="50"></img>
           </Col>
-          <Col xs={6}>
+          <Col xs={2}></Col>
+          <Col xs={5}>
           <img src={text} alt="text" id='text' width="200" height="50"></img>
           </Col>
         </Navbar.Brand>

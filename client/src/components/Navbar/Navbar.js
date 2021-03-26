@@ -29,8 +29,8 @@ function NavBar() {
           <Col xs={5}>
           <img src={logo} id="logo" alt="Logo" width="55" height="50"></img>
           </Col>
-          <Col xs={2}></Col>
-          <Col xs={5}>
+          <Col xs={1}></Col>
+          <Col xs={6}>
           <img src={text} alt="text" id='text' width="200" height="50"></img>
           </Col>
         </Navbar.Brand>

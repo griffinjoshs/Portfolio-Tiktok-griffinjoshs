@@ -92,7 +92,6 @@ function Footer() {
               id="footerNavColumn"
             >
               <h2 id="Hfooter">Subscribe</h2>
-              <div id="footerP">Become A Real One!</div>
               <FooterForm />
             </div>
           </div>

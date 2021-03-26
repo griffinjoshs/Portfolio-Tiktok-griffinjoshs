@@ -6,7 +6,7 @@ import FooterIcons from "./FooterIcons";
 function SmallFooter() {
     return (
         <div>
-            <FooterIcons />
+            <FooterIcons id='footCons'/>
             <br></br>
             <footer>
         <p className="footer-bottom-text">All Rights Reserved by ©Griffin Joshs.2020</p>

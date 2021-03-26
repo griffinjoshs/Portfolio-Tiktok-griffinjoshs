@@ -1,5 +1,5 @@
 .cardBox {
-  background: url("../../images/grunge.png");
+  background-color: black;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
